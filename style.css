@@ -1,0 +1,160 @@
+@font-face {
+  font-family: ’hanken’;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  font-family: ’hanken’;
+
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.results {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 25px;
+}
+
+.results h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+}
+
+.results h4 {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.results p {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  padding: 23px;
+  text-align: center;
+}
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.circle h4 {
+  color: white;
+  font-size: 70px;
+  font-weight: 800;
+}
+.circle p {
+  color: hsl(246, 100%, 80%);
+  font-weight: 700;
+  text-align: center;
+  padding: 0px;
+}
+
+.summary h3 {
+  color: hsl(224, 30%, 27%);
+  font-size: 24px;
+  font-weight: 700;
+
+  padding: 15px;
+}
+
+.types {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.icon {
+  display: flex;
+  gap: 10px;
+}
+.summary div:nth-child(2) {
+  background-color: hsl(6, 100%, 98%);
+  color: hsl(0, 100%, 67%);
+}
+
+.summary div:nth-child(3) {
+  background-color: #fffbf2;
+  color: hsl(39, 100%, 56%);
+  justify-self: right;
+}
+
+.summary div:nth-child(4) {
+  background-color: #f2fbfa;
+  color: hsl(166, 100%, 37%);
+}
+
+.summary div:nth-child(5) {
+  background-color: hsl(6, 100%, 98%);
+  color: hsl(234, 85%, 45%);
+}
+
+.numbers {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+.numbers span {
+  color: hsl(224, 30%, 70%);
+}
+button {
+  width: 90%;
+  margin-left: 10px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+
+    border-radius: 25px;
+    box-shadow: 8px 8px 16px #c3c3c3, -8px -8px 16px #fdfdfd;
+  }
+  .results,
+  .summary {
+    width: 50%;
+    padding: 20px;
+  }
+}
